@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[1] Config.pm:310> INFO - Logfile is 'c:/Users/yello/Documents/Schule/Gym/S1/Informatik/06-data-ethics-ai/06-data-ethics-and-ai-loic-pnx/documents/build/tutorial.blg'
+[530] biber-MSWIN64:340> INFO - === 
+[637] Biber.pm:419> INFO - Reading 'c:/Users/yello/Documents/Schule/Gym/S1/Informatik/06-data-ethics-ai/06-data-ethics-and-ai-loic-pnx/documents/build/tutorial.bcf'
+[1113] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[1186] bbl.pm:660> INFO - Writing 'c:/Users/yello/Documents/Schule/Gym/S1/Informatik/06-data-ethics-ai/06-data-ethics-and-ai-loic-pnx/documents/build/tutorial.bbl' with encoding 'UTF-8'
+[1187] bbl.pm:763> INFO - Output to c:/Users/yello/Documents/Schule/Gym/S1/Informatik/06-data-ethics-ai/06-data-ethics-and-ai-loic-pnx/documents/build/tutorial.bbl
+[1229] Biber.pm:131> WARN - The file 'c:/Users/yello/Documents/Schule/Gym/S1/Informatik/06-data-ethics-ai/06-data-ethics-and-ai-loic-pnx/documents/build/tutorial.bcf' does not contain any citations!
+[1229] Biber.pm:133> INFO - WARNINGS: 1
