@@ -24,14 +24,33 @@
 \addbibresource{../references/bibliography.bib}
 
 
-\title{Ethik im Umgang mit Daten}
-\author{Name des Autors}
+\title{Künstliche Intelligenz und deren Auswirkung auf die Arbeitswelt}
+\author{Loïc Schneider}
 \date{\today}
 
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    \makeatletter % Das hier brauchen wir damit wir spezielle Befehle wie \@author verwenden können.
+	\begin{center}
+		{\scshape Gymnasium Muttenz} \vspace{0.5cm}
+
+		 Informatik 2023/2024\vspace{5.5cm}
+
+		{\huge\bfseries \@title}
+
+		\vspace{2cm}
+
+		{\Large\itshape \@author}
+
+        \vspace{2cm}
+
+        Version vom: \@date
+	\end{center}
+    
+    \makeatother % Wir müssen das @ wieder schliessen, damit der Rest ganz normal funktioniert.
+\end{titlepage}
 
 \abstract{
     Dies ist eine Vorlage für eine Maturarbeit in der Informatik am Gymnasium Muttenz. Sie dient dazu, die Arbeit schnell und einfach zu starten und sollte einen guten Überblick über die Arbeit bieten.
