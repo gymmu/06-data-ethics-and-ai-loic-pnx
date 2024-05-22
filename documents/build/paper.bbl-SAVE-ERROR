@@ -1,0 +1,145 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global}
+    \entry{example}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3e3ce619cc4a64da59c8ee803f7976c6}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={The},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Publisher}%
+      }
+      \strng{namehash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{fullhash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{bibnamehash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{authorbibnamehash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{authornamehash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{authorfullhash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Title of the Book}
+      \field{year}{2017}
+    \endentry
+    \entry{tench-messy-data}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=25b327dd08b4754bfef124c4228c29ac}{%
+           family={Shane},
+           familyi={S\bibinitperiod},
+           given={Janelle},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{fullhash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{bibnamehash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{authorbibnamehash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{authornamehash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{authorfullhash}{25b327dd08b4754bfef124c4228c29ac}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{When Data is messy}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.aiweirdness.com/when-data-is-messy-20-07-03/
+      \endverb
+      \verb{url}
+      \verb https://www.aiweirdness.com/when-data-is-messy-20-07-03/
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global}
+    \entry{example}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3e3ce619cc4a64da59c8ee803f7976c6}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={The},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Publisher}%
+      }
+      \strng{namehash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{fullhash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{bibnamehash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{authorbibnamehash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{authornamehash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \strng{authorfullhash}{3e3ce619cc4a64da59c8ee803f7976c6}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Title of the Book}
+      \field{year}{2017}
+    \endentry
+    \entry{tench-messy-data}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=25b327dd08b4754bfef124c4228c29ac}{%
+           family={Shane},
+           familyi={S\bibinitperiod},
+           given={Janelle},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{fullhash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{bibnamehash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{authorbibnamehash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{authornamehash}{25b327dd08b4754bfef124c4228c29ac}
+      \strng{authorfullhash}{25b327dd08b4754bfef124c4228c29ac}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{When Data is messy}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.aiweirdness.com/when-data-is-messy-20-07-03/
+      \endverb
+      \verb{url}
+      \verb https://www.aiweirdness.com/when-data-is-messy-20-07-03/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
