@@ -2,3 +2,44 @@
 \label{chap:ai-training}
 
 Um alle Sachverhalte zu verstehen muss zuerst die Frage, wie eine KI erstellt, bzw. trainiert wird, geklärt werden.
+Das Training von KIs lässt sich in mehrere Schritte unterteilen.
+
+\section{Daten sammeln}
+Bevor man eine KI trainieren kann muss man zuerst einen Datensatz erstellen. Dieser Datensatz muss sehr gross sein, denn anderst als beispielsweise ein Kind braucht KI viel mehr Inputs um etwas neues zu erlernen, das Kind kann Muster schon nach wenigen Inputs erkennen und anwenden.
+
+Diese Datensätze müssen unter beachtung verschiedener Kriterien gesammelt werden. 
+Damit die KI keine falschen Dinge lernt, muss der Datensatz auf seine richtigkeit überprüft werden. Dazue gehört beispielsweise bei Texten, dass diese vereinheitlicht werden und Fehler entfernt.
+Der Datensatz muss ausserdem den Einsatzbereich der KI möglichst gut abdecken bzw. representieren. Somit kann garantiert werden, dass die KI im späteren Einsatz nicht von Situationen überascht wird, die anhand des vorherigen trainings unmöglich zu lösen sind.
+
+\section{Lernen}
+Nachdem ein Datensatz vorhanden ist wird dieser Verwendet um der KI die "Intelligenz" anzueignen. 
+
+Dazu gibt es verschiedene Lernkategorien, diese unterscheiden, wie Algorithmen Daten analyisieren und auswerten.
+\subsection{überwachtes und unüberwachtes Lernen (unsupervised/supervised)}
+Beim überwachten Lernen wird das Modell mit Daten trainiert, die bereits gekennzeichnet sind. Das bedeutet, dass die Daten manuell in Gruppen eingeteilt wurden, damit der Algorithmus daraus lernen kann. 
+Dies eignet sich gut für Aufgaben wie Risikobewertungen, Ja/Nein-Entscheidungen oder Rechtschreibprüfungen.
+
+Beim unüberwachten Lernen hingegen analysieren die Algorithmen die Daten selbstständig und erkennen Muster, ohne dass die Daten vorher in Gruppen eingeteilt wurden. 
+Diese Methode wird oft genutzt, um große Datensätze zu analysieren.
+
+Es gibt auch die Mischung aus den beiden Kategorien, bei denen die Daten teilweise manuell teilweise automatisch eingeteilt werden.
+
+\subsection{ver-/bestärkendes Lernen (reinforcement)}
+Beim verstärkenden Lernen lernen Algorithmen durch „Belohnungen“ und „Bestrafungen“, welche Entscheidungen gut oder schlecht sind. Dies ähnelt dem menschlichen Lernen. 
+Verstärkendes Lernen wird oft bei autonomen Fahrzeugen, Robotik und Spiele-KIs eingesetzt.
+
+\section{Überprüfen und Anpassen}
+Nach dem die KI mit dem Datensatz trainiert wurde, kann sie überprüft werden. Dabei ist es wichtig einen neuen Datensatz zu verwenden, den die KI im training noch nicht gesehen hat. Somit kann ausgeschlossen werden, dass die KI lediglich die Antwort auf den Trainigsdatensatz auswendig gelernt hat und die Zusammenhänge wirklich versteht.
+
+Bei diesem Prozess können dann Schwachstellen der KI festgestellt werden. Dadurch kann man sich nochmals auf spezifische Bereiche fokusieren und Parameter anpassen um eine stabilere und exaktere Funktion zu gewährleisten.
+Es ist auch sinnvoll, sich vor Augen zuführen wieso die KI auf ein gewisses Ergebnis gekommen ist.
+
+Dies zeigte auch ein Fall von Forschern an der Universität Türingen. \citep{tench-messy-data}
+Diese haben ein neuronales Netzwerk zum indentifizieren von Bildern erstellt und haben diesem dann denn auftrag gegeben den Teil des Bildes zu zeigen, dass für die Erkennung des Objekts am relevantesten war.
+Bei der erkennung von Schleien (eine Fischart) zeigte es als den relevantesten Teil stehts ein paar Finger vor einem grünen Hintergrund. Dies geschah weil der Datensatz, der beim training für die Schleien benutzt wurde, grösstenteils aus Bilder von Menschen, die den Fisch halten bestand, da dieser Fisch oft eine Art Trophäe ist.
+
+\noindent
+In diesem Fall führte ein unsauberere Datensatz also dazu, dass ein zusammenhang zwischen zwei Faktoren geschlossen wurde, die eigentlich nicht miteinander zu tun haben. Das zeigt wie wichtig es ist den Lösungsweg vom KIs zu analysieren und möglichst perfekte Datensätze bereit zu stellen.
+
+Am ende Wird das trainierte Modell in den tatsächlichen Anwendungsbereich eingesetzt, wo es dann echte Daten verarbeitet. 
+Dabei wird es jedoch noch immer überwacht um mögliche Fehler zu entdecken und das Modell durch weitere Anpassungen stetig zu verbessern.
