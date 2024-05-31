@@ -1,4 +1,4 @@
-\chapter{KI in der Medizin}
+\chapter{KI in der Arbeitswelt am Beispiel der Medizin}
 \label{chap:ai-medicine}
 
 Ein grosses potenzielles und auch teilweise schon exisiterendes Anwendungsgebiet für Künstliche Intelligenzen liegt in der Medizin.
@@ -11,11 +11,11 @@ Dem vermehrten Einsatz von KI in der Medizin stehen viele Chancen gegenüber.
 
 \subsection{\normalsize{Personalentlastung}}
 Ein Problem in der Medizin ist, dass sich Ärzte zu wenig Zeit nehmen können um wirklich auf die Patienten einzugehen und eine Verbindung aufzuabauen.
-Wenn KI gewisse Aufgaben übernehmen kann, würde das die Ärzte entlasten und sie könnten sich wieder verstärkt auf die Patienten einlassen, was den Arbeitsaltag der Ärzte erleichtert so wie dem Patienten ein besseeres Gefühl zu vermitteln.
+Wenn KI gewisse Aufgaben übernehmen kann, würde das die Ärzte entlasten und sie könnten sich wieder verstärkt auf die Patienten einlassen, was den Arbeitsaltag der Ärzte erleichtert und dadurch dem Patienten ein besseeres Gefühl vermittelt.
 
-Ein erster Schritt zur implementierung von KI wäre ein Programm in dem der Patient sein Krankheitsbild beschreiben kann um Indormationen zu möglichen Ursachen zu bekommen. Anhand von diesen Informationen könnte man dann die Dringlichkeit eines Arztbesuches abwägen.
+Ein erster Schritt zur implementierung von KI wäre ein Programm in dem der Patient sein Krankheitsbild beschreiben kann um Informationen zu möglichen Ursachen zu bekommen. Anhand von diesen Informationen könnte man dann die Dringlichkeit eines Arztbesuches abwägen.
 
-Bei körperlichen Beschwerden und auch chronischen Krankheiten hat man nicht in jeder Situation eine Fachperson zur Stelle. In diesen Momenten könnte eine KI basierte Fernüberwachung oder eine Art Virtueller Assistent Abhilfe schaffen.
+Bei körperlichen Beschwerden und auch chronischen Krankheiten hat man nicht in jeder Situation eine Fachperson zur Stelle. In diesen Momenten könnte eine KI basierte Fernüberwachung oder eine Art virtueller Assistent Abhilfe schaffen.
 
 \subsection{\normalsize{Krankheitsdiagnose}}
 Ein logischer und auch schon verwendeter weiterer Schritt ist die Krankheitsdiagnose anhand von Patientendaten. 
@@ -38,11 +38,22 @@ Bevor ein System mit echten Daten in den Alltag implementiert wird, sollte es di
 
 \subsection{\normalsize{Skepsis und Datenschutz}}
 Ein Risiko für welches das System nicht direkt etwas dafür kann, ist die Skepsis von Menschen, gegenüber der Funktionalität oder Sicherheit. 
-Dadurch können sich Menschen weigern gewisse Behandlungen anzunehmen. Das kann körperliche Ausqirkungen auf den Patienten haben, aber auch einen psychischen Graben zwischen Kranken und dem Gesundheitswesen schaffen.
+Dadurch können sich Menschen weigern gewisse Behandlungen anzunehmen. Das kann körperliche Auswirkungen auf den Patienten haben, aber auch einen psychischen Graben zwischen Kranken und dem Gesundheitswesen schaffen.
 
 Ein Grund für Skepsis kann der Datenschutz sein. Beim training der KI aber auch während sie ihren Aufgaben in der Medizin nachkommt, werden grosse Mengen an Daten benötigt respektive gesammelt. 
 Darunter befinden sich Daten über Krankheiten von Patienten und etlichen Körperwerte, die niemanden ausser den Arzt und einen selbst etwas angehen und auch nicht wünschenswert ist, dass irgend ein Fremder an diese gelangt.
 Gerade Patientendaten von Prominenten sind sehr wertvoll und steigern das Risiko von Cyberangriffen. 
+\newline
+\noindent
+Wurde das KI-Modell nicht gegen
+eine Membership Inference Attack geschützt, kann es möglich sein, mit bestimmten Eckwerten
+einer Person herauszufinden, ob ihre Daten für das Training des Modells benutzt worden waren
+und folglich auch, ob sie Krebs hatte. Dies geht vereinfacht gesagt so: Wurde der KI beigebracht,
+dass jemand mit den Parametern genau dieser Person Krebs hat und ist eine Kombination genau
+dieser Parameter höchst unwahrscheinlich, gibt die KI aber trotzdem an, dass sie sich sicher ist,
+so darf davon ausgegangen werden, dass die KI die betreffende Person «wiedererkannt» hat, d.h.
+sie Teil ihres Trainingsdatensatzes war und die Diagnose nicht nur eine Prognose, sondern eine
+Tatsache ist. \citep{datenschutz-ki-achtsamkeit}
 
 \subsection{\normalsize{Ethik}}
 Ein weiteres Risiko sind Fehler der KI. Daher muss man sich die Frage stellen, wie viel Verantwortung man der Maschine abgibt.
@@ -53,16 +64,16 @@ Ein moralisches bzw. ethisches Problem liegt auch darin, dass KI genau diese bei
 Durch Daten lassen sich zwar rational  die besten Entscheidungen finden, allerdings ist eine komplett rationale Entscheidung teilweise nicht die optimale.
 
 \subsection{\normalsize{Sicherheit}}
-Faktoren wie Datenqualität, algorithmische Fehler oder technkische Ausfälle können dazu führen, dass die KI Dinge tut, die sie nicht sollte. 
+Faktoren wie Datenqualität, algorithmische Fehler oder technische Ausfälle können dazu führen, dass die KI Dinge tut, die sie nicht sollte. 
 Daher macht es Sinn nicht die komplette Verantwortung an eine Maschine abzugeben, sondern immer noch eine Fachkraft als Endentscheidungsinstanz zu haben.
 Sicher ist, die Entscheidung muss für Ärzte und Patienten klar ersichtlich und verständlich sein. Selbst wenn das KI-System scheinbar so gut geworden ist, dass es keine Fehler macht, 
 müssen Entscheidungen noch klar verständlich sein. Bei der Einführung von digitalen Systemen besteht immer auch ein  Risiko von Cybaerangriffen.
-Es kann eine ganz neue Art von Cyberkriminalität entsthen, bei der man durch geziehlte Angriffe auf Medizinische Systeme Personen im echten Leben Schaden möchte.
+Es kann eine ganz neue Art von Cyberkriminalität entsthen, bei der man durch geziehlte Angriffe auf Medizinische Systeme Personen im echten Leben, physisch, Schaden möchte.
 
 \subsection{\normalsize{Rechtliches}}
 Weiter muss man sich überlegen, wer genau Verantwortlich ist, wenn künstliche Intelligenz einen Fehler macht und inwiefern wer rechtliche Konsequenzen tragen kann.
 Viele der anderen Risiken könnte man durch einen gut ausgearbeiteten Gesetzesentwurf zu KI minimieren. 
 Momentan fehlt es aber noch an vielen Ort an solchen Gesetzen. Manches ist zwar durch allgemeine Gesetze geregelt, aber es braucht spezifische Vorschriften für Künstliche Intelligenz.
-Es müssen klare Grenzen gesetzt werden und man muss eine sinvolle Lösung zur Gaftungsverantwortung in Problemfällen finden.
+Es müssen klare Grenzen gesetzt werden und man muss eine sinvolle Lösung zur Haftungsverantwortung in Problemfällen finden.
 
-KI ist ein wertvolles Tool, dass unter rasanter Entwicklung steht. Vielleicht sollte man aber mal innehalten und sich Rahmenbedingungen überlegen, damit alle möglichst gut davon provitieren können.
+KI ist ein wertvolles Tool, dass unter rasanter Entwicklung steht. Vielleicht sollte man aber mal innehalten und sich Rahmenbedingungen überlegen, damit alle möglichst gut davon profitieren können.
