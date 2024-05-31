@@ -4,8 +4,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\usepackage{graphicx}
 \usepackage[german=guillemets]{csquotes}
 \usepackage[a4paper]{geometry}
+\usepackage{tikz}
+
 
 \usepackage[
     backend=biber,
@@ -32,30 +35,33 @@
 \begin{document}
 
 \begin{titlepage}
-    \makeatletter % Das hier brauchen wir damit wir spezielle Befehle wie \@author verwenden können.
-	\begin{center}
-		{\scshape Gymnasium Muttenz} \vspace{0.5cm}
+    \makeatletter
+    \begin{center}
+        {\scshape Gymnasium Muttenz} \vspace{0.5cm}
 
-		 Informatik 2024\vspace{5.5cm}
+        Informatik 2024\vspace{3.5cm}
 
-		{\huge\bfseries \@title} 
+        {\huge\bfseries \@title}
 
-        \vspace{1cm}
+        \vspace{2cm}
 
         {\Large\bfseries Welche Chancen und Risiken bietet KI beim Einsatz in der Medizin?}
 
-        \vspace{2cm}
+        \vspace{3cm}
 
-		\vspace{2cm}
+        {\Large\itshape \@author}
 
-		{\Large\itshape \@author}
-
-        \vspace{2cm}
+        \vspace{0.5cm}
 
         Version vom: \@date
-	\end{center}
-    
-    \makeatother % Wir müssen das @ wieder schliessen, damit der Rest ganz normal funktioniert.
+
+    \end{center}
+    \makeatother
+
+    % Ensure the image covers the entire page width and bottom margin
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=south west,inner sep=0pt] at (current page.south west) {\includegraphics[width=\paperwidth, height=\paperheight, keepaspectratio]{TitlePicture.jpg}};
+    \end{tikzpicture}
 \end{titlepage}
 
 \tableofcontents
