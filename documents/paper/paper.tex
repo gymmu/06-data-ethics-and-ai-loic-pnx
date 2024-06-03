@@ -4,8 +4,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
-\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage[german=guillemets]{csquotes}
 \usepackage[a4paper]{geometry}
+\usepackage{tikz}
+
 
 \usepackage[
     backend=biber,
@@ -24,34 +27,57 @@
 \addbibresource{../references/bibliography.bib}
 
 
-\title{Ethik im Umgang mit Daten}
-\author{Name des Autors}
+\title{Künstliche Intelligenz und deren Auswirkung auf die Arbeitswelt}
+\author{Loïc Schneider}
 \date{\today}
 
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    \makeatletter
+    \begin{center}
+        {\scshape Gymnasium Muttenz} \vspace{0.5cm}
 
-\abstract{
-    Dies ist eine Vorlage für eine Maturarbeit in der Informatik am Gymnasium Muttenz. Sie dient dazu, die Arbeit schnell und einfach zu starten und sollte einen guten Überblick über die Arbeit bieten.
-}
+        Informatik 2024\vspace{3.5cm}
+
+        {\huge\bfseries \@title}
+
+        \vspace{2cm}
+
+        {\Large\bfseries Welche Chancen und Risiken bietet KI beim Einsatz in der Medizin?}
+
+        \vspace{3cm}
+
+        {\Large\itshape \@author}
+
+        \vspace{0.5cm}
+
+        Version vom: \@date
+
+    \end{center}
+    \makeatother
+
+    % Ensure the image covers the entire page width and bottom margin
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=south west,inner sep=0pt] at (current page.south west) {\includegraphics[width=\paperwidth, height=\paperheight, keepaspectratio]{TitlePicture.jpg}};
+    \end{tikzpicture}
+\end{titlepage}
 
 \tableofcontents
 
-\chapter{Einleitung}
+\input{chap_introduction.tex}
 
-Hier kommt die Einführung. Der Text hier sollte eigentlich noch viel länger sein, so das hier nicht so merkwürdige Umbrüche entstehen.
+\input{chap_ai-training.tex}
 
-Ich kann weitere Kapitel auch importieren.
+\input{chap_ai-workingplaces}
 
-\input{chap_methode.tex}
+\input{chap_ai-medicine}
 
-\section{Etwas mit Quellen}
+\input{chap_fazit.tex}
 
-Etwas mit Änderung hier am Ende.
 
-Wenn ich eine Quelle zitieren möchte, kann ich das ganze einfach am Ende des Satzes machen \citep{example}. Oder wie \citet{example} sagt, auch mitten im Text.
+\nocite{*}
 
 \printbibliography
 
